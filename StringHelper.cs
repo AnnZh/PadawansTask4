@@ -9,7 +9,10 @@ namespace PadawansTask4
             // put your code here
             // throw new NotImplementedException();
             if (str == null)
+                throw new ArgumentNullException();
+            if (str == "")
                 throw new ArgumentException();
+
 
             char[] arr = new char[] { 'a', 'e', 'i', 'o', 'u' };
 
